@@ -31,6 +31,7 @@ export class StickerBot implements BotInterface {
                     .setName(StickerBot.OPT_STICKER_TEXT)
                     .setDescription("The text associated with the sticker.")
                     .setAutocomplete(true)
+                    .setRequired(true)
             ) as SlashCommandBuilder;
         this.slashCommands = [this.slashSticker];
         this.stickers = {};
