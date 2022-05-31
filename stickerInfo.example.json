@@ -1,0 +1,18 @@
+{
+    "Some sticker text!": {
+        "text": "Some sticker text!",
+        "filePath": "stickers\\images\\somestickertext.png",
+        "url": "https://example.com/somestickertext.png",
+        "metadata": {
+            "collectionName": "examples"
+        }
+    },
+    "Some other sticker text?": {
+        "text": "Some other sticker text?",
+        "filePath": "stickers\\images\\someotherstickertext.png",
+        "url": "https://example.com/someotherstickertext.png",
+        "metadata": {
+            "collectionName": "examples"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+# Copy this file as "config.yaml", and fill in the values as appropriate.
+# ------------------------------------------------------------------------------
+
+# Path to the directory containing your StickerInfo file
+stickerInfoPath: stickers/stickerInfo.json
+
+# Whether to upload the sticker image as a file.
+# If false, will instead post the url to let Discord handle it.
+# If true, plase note bandwidth and data constraints.
+uploadImage: true
+
+fuse:
+  # The weight of the sticker text. See https://fusejs.io/examples.html#weighted-search
+  textWeight: 1
+
+  # Optional array of objects with name and weight.
+  # If you have extra metadata (see the type Sticker in StickerTypes.ts) that you'd like to search against,
+  # define them here.
+  # For example { ...metadata: { collectionName: "..." } } with
+  # - name: "metadata.collectionName"
+  #   weight: 2
+  # will search both on the text and collectionName in metadata, with extra weight given to this metadata.
+  # See https://fusejs.io/examples.html#weighted-search
+  metadata:
+    - name: metadata.collectionName
+      weight: 2
+
+  # Whether you want to print the Fuse.js search score in the autocomplete suggestions (for debugging)
+  score: false
+
+  # The max amount of autocomplete suggestions to return. Autocomplete will be more performant with a lower number.
+  limit: 20
+
+# The max amount of autocomplete queries to store in the LRU cache.
+cacheMax: 50
